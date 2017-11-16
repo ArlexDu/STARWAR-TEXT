@@ -1,0 +1,86 @@
+/*只设置container下面的第一层div隐藏*/
+#container > div {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    padding-top: 55px;
+    padding-bottom: 10px;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+}
+
+header.scrolled{
+    opacity: 0.8;
+    background: white;
+    color:black
+}
+
+header.scrolled:hover {
+    opacity: 1.0;
+}
+
+header a{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    position: relative;
+    color: #ffffff;
+
+}
+
+header.scrolled a{
+    color:black
+}
+
+header .menu::after {
+    content:"";
+    position: absolute;
+    display: block;
+    bottom: -12px;
+    left:0px;
+    height: 0px;
+    width: 100%;
+    background-color: #ffffff;
+    transition: all .3s ease-out;
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+header .menu:hover::after{
+    opacity: 1;
+    height: 5px;
+}
+
+#web-background{
+    background-color: #35017f;
+    z-index: -5;
+}
+
+.full-page{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+

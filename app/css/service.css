@@ -1,0 +1,28 @@
+
+
+.service-background {
+    background-size: cover;
+    background-image: url(../img/service-back.png);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+
+
+.background-animation{
+    animation:animations 40s infinite;
+    animation-timing-function:linear;
+}
+
+@keyframes animations {
+    50% {transform: scale(1.5)}
+    100% {transform: scale(1)}
+}
+
+body::-webkit-scrollbar {display:none; }

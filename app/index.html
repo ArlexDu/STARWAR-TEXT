@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="css/animate.css">
+<link>
+    <meta charset="UTF-8">
+    <title>公司简介</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="css/introduction.css" rel="stylesheet" type="text/css"/>
+    <link href="css/service.css" rel="stylesheet" type="text/css"/>
+    <link href="css/customer.css" rel="stylesheet" type="text/css"/>
+    <link href="css/joinus.css" rel="stylesheet" type="text/css"/>
+    <link href="css/connection.css" rel="stylesheet" type="text/css"/>
+    <link href="css/animate.css" rel="stylesheet" type="text/css"/>
+    <link href="css/flipAnimation.css" rel="stylesheet" type="text/css"/>
+
+    <script src="vendor/jquery.js"></script>
+    <script src="vendor/signals.js"></script>
+    <script src="vendor/hasher.js"></script>
+    <script src="vendor/crossroads.js"></script>
+    <script src="vendor/ScrollMagic/TweenMax.min.js"></script>
+    <script src="vendor/ScrollMagic/ScrollMagic.js"></script>
+    <script src="vendor/ScrollMagic/animation.gsap.js"></script>
+    <script src="vendor/ScrollMagic/debug.addIndicators.js"></script>
+    <script src="js/introductionController.js"></script>
+    <script src="js/serviceController.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/flipAnimation.js"></script>
+</head>
+<body>
+    <header>
+        <a href="#introduction" id="introduction-menu" >关于我们</a>
+        <a href="#service" id="service-menu">我们的服务</a>
+    </header>
+
+    <div id="slide1">
+        <div style="height:100%;width:100%;background-color: #35017f;z-index: -100;position: absolute"></div>
+    </div>
+    <div id="slide2">
+        <div style="height:100%;width:100%;background-color: #e6e6e6;z-index: -100;position: absolute"></div>
+    </div>
+
+    <div id="container">
+        <div id="introduction" class="full-page" >
+            <div class="border" data-position = "top"></div>
+            <div class="border" data-position = "right"></div>
+            <div class="border" data-position = "bottom"></div>
+            <div class="border" data-position = "left"></div>
+            <div id="video-container" class="full-page">
+                <video id="video" autoplay loop src="video/intro.mp4" width="676" height="380"></video>
+            </div>
+            <div class="video-shadow full-page"></div>
+            <div id="content-container" class="full-page">
+                <div id="wrapper-out">
+                    <div id="wrapper-in">
+                        <div>
+                            <div style="height: 250px"></div>
+                            <p class="item">英雄联盟</p>
+                            <p class="item">
+                                <br>
+                            </p>
+                            <p class="item">成立于2016年初</p>
+                            <p class="item">是国内领先的直播服务和品牌营销推广服务商</p>
+                            <p class="item">
+                                <br>
+                            </p>
+                            <p class="item">我们提供专业可靠的全套营销推广服务</p>
+                            <p class="item">包括网红KOL培养</p>
+                            <p class="item">直播内容制作</p>
+                            <p class="item">新媒体渠道品牌推广</p>
+                            <p class="item">知名电商平台流量转化等</p>
+                            <p class="item">
+                                <br>
+                            </p>
+                            <p class="item">得益于明如传媒对于营销市场的深刻认知以及成熟的营销传播服务</p>
+                            <p class="item">我们以创新巧妙的手法将品牌和最终用户联结起来</p>
+                            <p class="item">
+                                <br>
+                            </p>
+                            <p class="item">我们致力于保护和提升品牌在网络上的形象</p>
+                            <p class="item">同时帮助实现其与消费者的沟通互动从而刺激销售</p>
+                            <p class="item">扩大利润</p>
+                            <div style="height: 250px"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="service" style="overflow-x: hidden;overflow-y: hidden;">
+            <div id="service-content" style="overflow-x: hidden;overflow-y: hidden;" class="full-page"> <div  class="service-background"></div>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="web-background" class="full-page"></div>
+</body>
+</html>

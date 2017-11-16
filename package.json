@@ -1,0 +1,29 @@
+{
+  "name": "STARTWAR-TEXT",
+  "version": "1.0.0",
+  "description": "demo show",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node_modules/.bin/gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArlexDu/STARWAR-TEXT.get"
+  },
+  "keywords": [
+    "html5",
+    "css3"
+  ],
+  "author": "arlex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArlexDu/STARWAR-TEXT/issues"
+  },
+  "homepage": "https://github.com/ArlexDu/STARWAR-TEXT#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {}
+}

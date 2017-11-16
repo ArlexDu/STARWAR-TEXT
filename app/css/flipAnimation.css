@@ -1,0 +1,120 @@
+/*翻页*/
+.trans-layer-next {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    animation:mymove-next 1.0s 1;
+    animation-fill-mode:forwards;
+    animation-timing-function:linear;
+    z-index: 1000;
+
+}
+
+.trans-layer-next2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    animation:mymove-next 0.75s 1;
+    animation-fill-mode:forwards;
+    animation-timing-function:linear;
+    z-index: 1000;
+
+}
+
+.trans-layer-pre {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    animation:mymove-pre 1s 1;
+    animation-fill-mode:backwards;
+    animation-timing-function:linear;
+    z-index: 1000;
+
+}
+
+.trans-layer-pre2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    animation:mymove-pre 0.75s 1;
+    animation-fill-mode:backwards;
+    animation-timing-function:linear;
+    z-index: 1000;
+
+}
+
+.section-trans-next{
+    animation:sectionMove-next 0.25s 1;
+    animation-fill-mode:forwards;
+    animation-timing-function:linear;
+    z-index: 1000;
+}
+
+.section-trans-pre{
+    animation:sectionMove-pre 0.25s 1;
+    animation-fill-mode:backwards;
+    animation-timing-function:linear;
+    z-index: 1000;
+}
+
+@keyframes sectionMove-next
+{
+    from {top:100%;}
+    to {top:0%}
+}
+
+@keyframes sectionMove-pre
+{
+    from {top:-100%;}
+    to {top:0%}
+}
+
+@keyframes mymove-next
+{
+    from {top:100%;}
+    to {top:-100%}
+}
+
+@keyframes mymove-pre
+{
+    from {top:-100%;}
+    to {top:100%}
+}
+
+.process-container{
+    position: absolute;
+    opacity: 1;
+    bottom: -7px;
+    left: 0px;
+    width: 100%;
+    height: 5px;
+    background-color: darkgrey;
+}
+
+.process-line{
+    width: 0;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+
